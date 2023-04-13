@@ -1,69 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>哇哈哈</title>
-	</head>
+<head>
+	<script src="https://d3js.org/d3.v4.js"></script>
+</head>
+<body>
+<h2>D3.js is Easy to Use</h2>
+<p>The script below selects the body element and appends a paragraph with the text "Hello World!":</p> 
 
-	<body>
-		<h1> BMI計算器 </h1>
-		<table border = "2">
-			 <tr>
-			 	<th>身高</th>
-			 	<th>體重</th>
-			 </tr>
-			 <tr>
-			 	<td><input type="number" id="height" name="height" placeholder="公尺"></td>
-			 	<td><input type="number" id="weight" name="weight" placeholder="公斤"></td>
-			 </tr>
-			 <tr>
-			 	<td></td>
-			 	<td>
-			 		<button id ="calculator" onclick="calculate()">計算</button>
-			 	</td>
-			 </tr>
-		</table>
+<div class="main"></div>
+<script>
+d3.csv("20230413.csv", function(data){
+	document.
+})
+</script>
 
-		<script type="text/javascript">
-			function calculate(){
-				let height = document.querySelector("#height").value; //取得身高
-				let weight = document.querySelector("#weight").value; //取得體重
-				alert("身高"+height);
-				alert("體重"+weight);
-				let bmi = weight / (height^2); //計算BMI
-				alert("BMI"+bmi);
-				if(bmi<18.5){
-					alert("體重過輕")
-				}else if(bmi >= 18.5 && bmi < 24){
-					alert("健康體位")
-				}else{
-					alert("體位異常")
-				}
-			}
-		</script>
-
-		<h1> This is the title today </h1>
-		<table border = "2">
-			 <tr>
-			 	<th>書名</th>
-			 	<th>作者</th>
-			 </tr>
-			 <tr>
-			 	<td>鍊鋸人</td>
-			 	<td>藤本樹</td>
-			 </tr>
-			 <tr>
-			 	<td>七龍珠</td>
-			 	<td>鳥山明</td>
-			 </tr>
-		</table>
-
-
-
-		<h2>h2</h2>
-		<h3>h3</h3>
-		<h4>h4</h4>
-		<h5>h5</h5>
-		<h6>h6</h6>
-		這是偶的網頁
-	</body>
+</body>
 </html>
